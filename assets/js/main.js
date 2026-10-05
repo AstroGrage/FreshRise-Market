@@ -2,6 +2,8 @@
     "use strict";
 
     $(document).ready(function($){
+
+        if (!$('body').hasClass('experience-site')) {
         
         // testimonial sliders
         $(".testimonial-sliders").owlCarousel({
@@ -156,11 +158,177 @@
         $(".close-btn").on("click", function() {
             $(".search-area").removeClass("search-active");
         });
+        }
+
+        // Project navigation drawer
+        var sidebar = $(".experience-sidebar");
+        var sidebarToggles = $(".experience-menu-toggle");
+        var sidebarOpen = false;
+        var previousFocus = null;
+
+        function closeExperienceSidebar(restoreFocus) {
+            if (!sidebar.length) {
+                return;
+            }
+
+            sidebarOpen = false;
+            $("body").removeClass("experience-sidebar-open");
+            sidebar.attr("aria-hidden", "true");
+            $(".experience-backdrop").attr("aria-hidden", "true");
+            sidebarToggles.attr("aria-expanded", "false");
+
+            if (restoreFocus !== false && previousFocus) {
+                previousFocus.focus();
+            }
+        }
+
+        sidebarToggles.on("click", function() {
+            previousFocus = this;
+            sidebarOpen = true;
+            $("body").addClass("experience-sidebar-open");
+            sidebar.attr("aria-hidden", "false").trigger("focus");
+            $(".experience-backdrop").attr("aria-hidden", "false");
+            sidebarToggles.attr("aria-expanded", "true");
+            sidebar.find("a").first().trigger("focus");
+        });
+
+        $(".experience-sidebar-close, .experience-backdrop").on("click", function() {
+            closeExperienceSidebar();
+        });
+
+        $(".experience-sidebar-links a").on("click", function() {
+            closeExperienceSidebar();
+        });
+
+        $(document).on("keydown", function(event) {
+            if (!sidebarOpen) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                closeExperienceSidebar();
+                return;
+            }
+
+            if (event.key === "Tab") {
+                var focusableItems = sidebar.find("a, button").filter(":visible");
+                var firstItem = focusableItems.first()[0];
+                var lastItem = focusableItems.last()[0];
+
+                if (event.shiftKey && document.activeElement === firstItem) {
+                    event.preventDefault();
+                    lastItem.focus();
+                } else if (!event.shiftKey && document.activeElement === lastItem) {
+                    event.preventDefault();
+                    firstItem.focus();
+                }
+            }
+        });
+
+        // Keep the visible section reflected in both navigation views.
+        var navigationLinks = $(".experience-nav a, .experience-sidebar-links a");
+        var observedSections = $(".experience-main section[id]");
+
+        function setActiveSection(sectionId) {
+            navigationLinks.each(function() {
+                var isActive = $(this).attr("href") === "#" + sectionId;
+                $(this).toggleClass("is-active", isActive);
+
+                if (isActive) {
+                    $(this).attr("aria-current", "location");
+                } else {
+                    $(this).removeAttr("aria-current");
+                }
+            });
+        }
+
+        if ("IntersectionObserver" in window && observedSections.length) {
+            var sectionObserver = new IntersectionObserver(function(entries) {
+                var visibleSections = entries.filter(function(entry) {
+                    return entry.isIntersecting;
+                }).sort(function(first, second) {
+                    return first.boundingClientRect.top - second.boundingClientRect.top;
+                });
+
+                if (visibleSections.length) {
+                    setActiveSection(visibleSections[0].target.id);
+                }
+            }, { rootMargin: "-90px 0px -70% 0px" });
+
+            observedSections.each(function() {
+                sectionObserver.observe(this);
+            });
+        }
+
+        // Shared store-page navigation drawer
+        var storeSidebar = $("#site-sidebar");
+        var storeSidebarToggles = $(".global-sidebar-toggle");
+        var storeSidebarOpen = false;
+        var storePreviousFocus = null;
+
+        function closeStoreSidebar(restoreFocus) {
+            if (!storeSidebar.length) {
+                return;
+            }
+
+            storeSidebarOpen = false;
+            $("body").removeClass("sidebar-open");
+            storeSidebar.attr("aria-hidden", "true");
+            $(".sidebar-backdrop").attr("aria-hidden", "true");
+            storeSidebarToggles.attr("aria-expanded", "false");
+
+            if (restoreFocus !== false && storePreviousFocus) {
+                storePreviousFocus.focus();
+            }
+        }
+
+        storeSidebarToggles.on("click", function() {
+            storePreviousFocus = this;
+            storeSidebarOpen = true;
+            $("body").addClass("sidebar-open");
+            storeSidebar.attr("aria-hidden", "false");
+            $(".sidebar-backdrop").attr("aria-hidden", "false");
+            storeSidebarToggles.attr("aria-expanded", "true");
+            storeSidebar.find("a").first().trigger("focus");
+        });
+
+        $(".sidebar-close, .sidebar-backdrop").on("click", function() {
+            closeStoreSidebar();
+        });
+
+        $(".site-sidebar-links a").on("click", function() {
+            closeStoreSidebar();
+        });
+
+        $(document).on("keydown", function(event) {
+            if (!storeSidebarOpen) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                closeStoreSidebar();
+                return;
+            }
+
+            if (event.key === "Tab") {
+                var storeFocusableItems = storeSidebar.find("a, button").filter(":visible");
+                var firstStoreItem = storeFocusableItems.first()[0];
+                var lastStoreItem = storeFocusableItems.last()[0];
+
+                if (event.shiftKey && document.activeElement === firstStoreItem) {
+                    event.preventDefault();
+                    lastStoreItem.focus();
+                } else if (!event.shiftKey && document.activeElement === lastStoreItem) {
+                    event.preventDefault();
+                    firstStoreItem.focus();
+                }
+            }
+        });
     
     });
 
 
-    jQuery(window).on("load",function(){
+    jQuery(document).ready(function(){
         jQuery(".loader").fadeOut(1000);
     });
 

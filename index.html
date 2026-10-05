@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+	<meta name="description" content="Visual merchandising and retail atmosphere strategy for a hybrid food retailer, focusing on signage, branding, product presentation and customer experience.">
 
 	<!-- title -->
-	<title>Freshrise & Bakery</title>
+	<title>Visual Merchandising &amp; Retail Atmosphere | FreshRise Market</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
@@ -16,23 +16,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="assets/css/all.min.css">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<!-- owl carousel -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.css">
-	<!-- magnific popup -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<!-- animate css -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- mean menu css -->
-	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- main style -->
 	<link rel="stylesheet" href="assets/css/main.css">
-	<!-- responsive -->
-	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body>
+<body class="experience-site">
+	<a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="experience-header" id="page-top">
+		<div class="experience-header-inner">
+			<a class="experience-brand" href="#home" aria-label="FreshRise Market home"><img src="assets/img/Freshrise-logo.png" alt="FreshRise Market"></a>
+			<nav class="experience-nav" aria-label="Main navigation">
+				<a href="#displays">Displays</a><a href="#packaging">Packaging</a><a href="#signage">Signage &amp; Branding</a><a href="#atmospherics">Atmospherics</a><a href="#competitors">Competitors</a>
+			</nav>
+			<a class="header-shop-link" href="shop.html">Visit the shop <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+			<button class="experience-menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="experience-sidebar" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+		</div>
+	</header>
+	<div class="experience-backdrop" aria-hidden="true"></div>
+	<aside class="experience-sidebar" id="experience-sidebar" role="dialog" aria-modal="true" aria-labelledby="experience-sidebar-title" aria-hidden="true" tabindex="-1">
+		<div class="experience-sidebar-heading"><h2 id="experience-sidebar-title">Explore the project</h2><button class="experience-sidebar-close" type="button" aria-label="Close navigation menu"><i class="fas fa-times" aria-hidden="true"></i></button></div>
+		<nav aria-label="Project sections"><ul class="experience-sidebar-links">
+			<li><a href="#home">Home</a></li><li><a href="#displays">In-store displays</a></li><li><a href="#packaging">Packaging</a></li><li><a href="#signage">Signage &amp; branding</a></li><li><a href="#atmospherics">Atmospherics</a></li><li><a href="#competitors">Competitors</a></li><li><a href="#consumer-behaviour">Consumer behaviour</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#references">References</a></li>
+		</ul></nav>
+		<a class="experience-sidebar-shop" href="shop.html">Browse the FreshRise shop <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+	</aside>
 	
 	<!--PreLoader-->
     <div class="loader">
@@ -98,11 +105,17 @@
 											<span class="badge bg-danger badge-number rounded-circle" >3</span> +
 											<span><i class="fas fa-shopping-cart"></i></span></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+										<button class="sidebar-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-sidebar" aria-expanded="false">
+											<i class="fas fa-bars" aria-hidden="true"></i>
+										</button>
 									</div>
 								</li>
 							</ul>
 						</nav>
 						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<button class="sidebar-toggle mobile-show mobile-sidebar-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-sidebar" aria-expanded="false">
+							<i class="fas fa-bars" aria-hidden="true"></i>
+						</button>
 						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
@@ -111,7 +124,82 @@
 		</div>
 	</div>
 	<!-- end header -->
+
+	<div class="sidebar-backdrop" data-sidebar-close="true" aria-hidden="true"></div>
+	<aside class="site-sidebar" id="site-sidebar" role="dialog" aria-modal="true" aria-labelledby="site-sidebar-title" aria-hidden="true" tabindex="-1">
+		<div class="site-sidebar-header">
+			<h2 id="site-sidebar-title">Explore FreshRise</h2>
+			<button class="sidebar-close" type="button" aria-label="Close navigation menu">
+				<i class="fas fa-times" aria-hidden="true"></i>
+			</button>
+		</div>
+		<nav aria-label="Sidebar navigation">
+			<ul class="site-sidebar-links">
+				<li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="about.html"><i class="fas fa-leaf" aria-hidden="true"></i> About</a></li>
+				<li><a href="shop.html"><i class="fas fa-shopping-basket" aria-hidden="true"></i> Shop</a></li>
+				<li><a href="single-product.html"><i class="fas fa-box-open" aria-hidden="true"></i> Featured product</a></li>
+				<li><a href="cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+				<li><a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+			</ul>
+		</nav>
+	</aside>
 	
+	<main class="experience-main" id="main-content">
+		<section class="experience-hero" id="home" aria-labelledby="hero-title">
+			<div class="hero-copy"><p class="eyebrow"><span></span> FRESHRiSE MARKET · GROUP 2</p><h1 id="hero-title">VISUAL MERCHANDISING <span>&amp;</span> RETAIL ATMOSPHERE</h1><p class="hero-intro">A visual merchandising strategy for a hybrid food retailer, connecting a welcoming physical store with a clear, convenient online experience.</p><a class="button-primary" href="#displays">Explore our store experience <i class="fas fa-arrow-down" aria-hidden="true"></i></a><div class="hero-principles"><span>Easy to navigate</span><span>Freshly presented</span><span>One connected brand</span></div></div>
+			<figure class="hero-visual"><img src="assets/img/Our-vision.jpg" alt="Food store interior with bakery shelves, fresh produce and organised departments"><figcaption><span>01 / 05</span><span>Fresh food. A clearer way to shop.</span></figcaption><div class="hero-image-note"><i class="fas fa-store" aria-hidden="true"></i><span>STORE + ONLINE<br><strong>One FreshRise experience</strong></span></div></figure>
+			<a class="hero-scroll" href="#project-intro" aria-label="Continue to the project introduction"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a>
+		</section>
+		<section class="intro-strip" id="project-intro"><span>THE EXPERIENCE, BY DESIGN</span><p>Attractive presentation. Easy wayfinding. A familiar identity at every touchpoint.</p><strong>FR<span>.</span></strong></section>
+
+		<section class="content-section displays-section" id="displays" aria-labelledby="displays-title">
+			<div class="section-heading"><div><p class="eyebrow">01 / PRODUCT PRESENTATION</p><h2 id="displays-title">In-store displays</h2></div><p>Make the next good choice easy to spot. Clear groupings help customers move from need to product without guesswork.</p></div>
+			<div class="display-feature"><div class="display-feature-copy"><p class="mini-label">SHELVING &amp; PRODUCT GROUPING</p><h3>Good order is good service.</h3><p>Arrange merchandise into readable departments so shoppers can find everyday essentials, meal ideas and ready-to-eat choices quickly. Give popular products and special offers a visible, easy-to-reach position.</p><ul class="category-list"><li>Main meals</li><li>Snacks</li><li>Drinks</li><li>Desserts</li><li>Special offers</li><li>Ready-to-eat products</li></ul></div>
+				<figure class="shelf-concept" aria-label="Organised shelf display concept"><div class="shelf-sign">SHOP BY MOMENT <span>›</span></div><div class="shelf-row"><i class="product-green"></i><i class="product-coral"></i><i class="product-gold"></i><i class="product-cream"></i><i class="product-green"></i><i class="product-coral"></i><span>MAIN MEALS</span></div><div class="shelf-row"><i class="product-gold"></i><i class="product-green"></i><i class="product-cream"></i><i class="product-coral"></i><i class="product-gold"></i><i class="product-green"></i><span>SNACKS &amp; DRINKS</span></div><div class="shelf-row"><i class="product-cream"></i><i class="product-gold"></i><i class="product-coral"></i><i class="product-green"></i><i class="product-cream"></i><i class="product-gold"></i><span class="offer-tag">TODAY'S OFFER</span></div><div class="shelf-base"></div><figcaption>DISPLAY CONCEPT · CLEAR GROUPS, VISIBLE PRICES</figcaption></figure>
+			</div>
+			<p class="display-caption">Example of a simple and organised product display that makes products easier for customers to find.</p>
+			<article class="lifestyle-feature"><div class="lifestyle-image"><img src="assets/img/Groceries%20.jpg" alt="Fresh groceries and meal ingredients arranged together"><div class="lifestyle-message"><span>FRESHRiSE MARKET</span><strong>GOOD FOOD.<br>GOOD TIMES.</strong><i>Make room for everyday moments.</i></div></div><div class="lifestyle-copy"><p class="mini-label">LIFESTYLE DISPLAY</p><h3>Show food in real life.</h3><p>Food photography, people enjoying a meal, inviting store scenes and warm lifestyle messaging help customers picture how products fit into their day.</p><a class="text-link" href="#signage">See how the brand comes to life <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+		</section>
+
+		<section class="packaging-section" id="packaging" aria-labelledby="packaging-title"><div class="packaging-layout"><div class="packaging-copy"><p class="eyebrow">02 / TAKE IT WITH YOU</p><h2 id="packaging-title">Packaging &amp;<br>brand communication</h2><p class="section-lead">Packaging protects the product and carries the FreshRise experience beyond the store: into a customer's home, takeaway order or online delivery.</p><div class="packaging-points"><article><span>01</span><div><h3>Contain &amp; protect</h3><p>Keep food in good condition, make it easy to carry and choose formats that work for takeaway and online delivery.</p></div></article><article><span>02</span><div><h3>Communicate clearly</h3><p>Include product name, ingredients, allergen and nutritional information where required, storage instructions, brand name, contact details and online ordering information.</p></div></article><article><span>03</span><div><h3>Be easy to recognise</h3><p>Repeat the same logo, colours, fonts and visual identity across every pack so customers know it is FreshRise.</p></div></article></div></div>
+				<figure class="packaging-figure"><div class="package-scene"><div class="package-bag"><div class="bag-fold"></div><img src="assets/img/Freshrise-logo.png" alt="FreshRise Market logo on packaging concept"><span>FRESH FOOD.<br>BETTER EVERYDAY.</span><b>FRESH<br>FROM<br>FRESHRiSE</b></div><div class="package-label"><span>PRODUCT LABEL</span><strong>Product name</strong><small>Ingredients · Allergens<br>Storage · Contact · Order online</small><i class="fas fa-qrcode" aria-hidden="true"></i><small>SCAN TO ORDER</small></div><div class="package-produce package-produce-one"></div><div class="package-produce package-produce-two"></div></div><figcaption>Packaging concept showing how food can be protected while also communicating the retailer's brand.</figcaption></figure>
+			</div></section>
+
+		<section class="signage-section" id="signage" aria-labelledby="signage-title"><div class="signage-topline"><span>GROUP 2 · MAIN FOCUS</span><span>03 / THE BRAND IN EVERY DIRECTION</span></div><div class="signage-intro"><div><p class="eyebrow">SIGNAGE IS A SERVICE</p><h2 id="signage-title">Signage<br><span>&amp; branding</span></h2></div><div><p class="signage-lead">Our main focus as Group 2 is signage and branding. The signs should not only make the store attractive, but should also help customers navigate, understand promotions, find products and connect with the retailer's brand.</p><p>Good signs answer the right question at the right moment: what is available, what does it cost, and where do I go next?</p></div></div>
+			<div class="signage-gallery">
+				<article class="signage-card"><div class="signage-card-top"><span>01</span><span>POINT OF SALE</span></div><div class="pos-board"><div class="pos-ribbon">SPECIAL OFFER</div><p>MEAL DEAL</p><div class="pos-food-mark" aria-hidden="true"><i class="fas fa-utensils"></i><span>+</span><i class="fas fa-glass-whiskey"></i></div><span class="pos-meal">Main Meal + Side + Drink</span><strong class="pos-price">R89</strong><span class="pos-order">ORDER NOW <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div><div class="signage-card-copy"><h3>POS signage</h3><p>Placed near ordering and payment, this sign puts the product, price and promotion first. Alternative: <strong>Today's Special · 20% off selected meals.</strong> Keep the message clear, not crowded.</p></div></article>
+				<article class="signage-card"><div class="signage-card-top"><span>02</span><span>WAYFINDING</span></div><div class="direction-board"><div class="direction-brand">FRESHRiSE <span>STORE GUIDE</span></div><div class="direction-row"><strong>ORDER HERE</strong><span>→</span></div><div class="direction-row"><strong>COLLECTION</strong><span>←</span></div><div class="direction-row"><strong>SEATING</strong><span>↑</span></div><div class="direction-row"><strong>ONLINE PICK-UP</strong><span>→</span></div><div class="direction-row"><strong>RESTROOMS</strong><span>→</span></div></div><div class="signage-card-copy"><h3>Directional &amp; departmental</h3><p>High-contrast words and obvious arrows help customers move around the store without constantly needing staff assistance.</p></div></article>
+				<article class="signage-card"><div class="signage-card-top"><span>03</span><span>BRAND STORY</span></div><div class="brand-poster"><img src="assets/img/Rolls.jpg" alt="Freshly baked rolls for a FreshRise lifestyle graphic concept"><div><span>FRESHRiSE MARKET</span><strong>GOOD FOOD.<br>GOOD TIMES.</strong><small>Freshly baked. Ready for your table.</small></div></div><div class="signage-card-copy"><h3>Lifestyle &amp; brand graphics</h3><p>Carry the same identity across storefront, menu boards, packaging, posters, staff clothing, website, social media and online ordering.</p></div></article>
+			</div>
+			<div class="brand-language"><div><p class="mini-label">A VOICE CUSTOMERS CAN RECOGNISE</p><h3>One brand. Many moments.</h3></div><div class="brand-messages"><p>“GOOD FOOD. GOOD TIMES.”</p><p>“FRESH. SIMPLE. CONVENIENT.”</p><p>“YOUR FOOD, YOUR CHOICE.”</p></div></div>
+			<div class="brand-system"><div class="brand-system-logo"><img src="assets/img/Freshrise-logo.png" alt="FreshRise Market logo"><span>THE FRESHRiSE IDENTITY</span></div><div class="brand-system-details"><div><span class="mini-label">COLOUR PALETTE</span><div class="swatches"><span class="swatch-item"><span class="swatch swatch-orange" role="img" aria-label="FreshRise orange"></span><small>Primary</small></span><span class="swatch-item"><span class="swatch swatch-forest" role="img" aria-label="Produce green"></span><small>Secondary</small></span><span class="swatch-item"><span class="swatch swatch-coral" role="img" aria-label="Warm coral accent"></span><small>Accent</small></span><span class="swatch-item"><span class="swatch swatch-paper" role="img" aria-label="Open paper neutral"></span><small>Neutral</small></span></div></div><div><span class="mini-label">TYPOGRAPHY</span><p class="type-display">Poppins <small>HEADLINES</small></p><p class="type-body">Open Sans <small>EVERYDAY INFORMATION</small></p></div></div><div class="brand-route"><span>STORE</span><i class="fas fa-arrow-right" aria-hidden="true"></i><span>PACKAGING</span><i class="fas fa-arrow-right" aria-hidden="true"></i><span>WEBSITE</span><i class="fas fa-arrow-right" aria-hidden="true"></i><span>SOCIAL MEDIA</span><i class="fas fa-arrow-right" aria-hidden="true"></i><span>ONLINE ORDERING</span></div></div>
+			<p class="signage-principle"><span>THE PRINCIPLE</span> Signage is not decoration. It is a communication tool that makes the brand recognisable and the shopping journey easier.</p>
+		</section>
+
+		<section class="content-section atmosphere-section" id="atmospherics" aria-labelledby="atmospherics-title"><div class="section-heading"><div><p class="eyebrow">04 / SENSORY MARKETING</p><h2 id="atmospherics-title">Atmospherics</h2></div><p>The store environment shapes how customers feel while shopping. Every sensory detail should support a calm, welcoming and useful experience.</p></div><div class="sense-grid">
+				<article class="sense-card"><span class="sense-icon"><i class="fas fa-eye" aria-hidden="true"></i></span><span class="mini-label">01 · SIGHT</span><h3>See it clearly.</h3><p>Clear signage, attractive displays, consistent colours, good lighting, clean counters, organised shelves, food photography and easy-to-read menu boards.</p><div class="sense-lines" aria-hidden="true"><i></i><i></i><i></i></div></article>
+				<article class="sense-card"><span class="sense-icon"><i class="fas fa-volume-down" aria-hidden="true"></i></span><span class="mini-label">02 · SOUND</span><h3>Keep the room relaxed.</h3><p>Soft background music can create a relaxed environment without getting in the way of conversation or staff communication.</p><div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+				<article class="sense-card"><span class="sense-icon"><i class="fas fa-bread-slice" aria-hidden="true"></i></span><span class="mini-label">03 · SMELL</span><h3>Let freshness welcome.</h3><p>The aroma of freshly prepared food can make the store feel welcoming and strengthen associations with freshness and quality.</p><div class="smell-mark" aria-hidden="true">FRESH<br>FROM THE<br>OVEN</div></article>
+				<article class="sense-card"><span class="sense-icon"><i class="fas fa-lightbulb" aria-hidden="true"></i></span><span class="mini-label">04 · LIGHTING</span><h3>Light for the task.</h3><p>Keep ordering areas bright, make product displays easy to see and use more comfortable lighting around seating.</p><div class="light-steps"><span>ORDER</span><span>DISCOVER</span><span>UNWIND</span></div></article>
+				<article class="sense-card"><span class="sense-icon"><i class="fas fa-heart" aria-hidden="true"></i></span><span class="mini-label">05 · AMBIENCE</span><h3>Make room to feel good.</h3><p>The overall impression should be welcoming, clean, modern, comfortable, organised and customer-friendly.</p><div class="ambience-tags"><span>WELCOMING</span><span>COMFORTABLE</span><span>ORGANISED</span></div></article>
+			</div></section>
+
+		<section class="competitor-section content-section" id="competitors" aria-labelledby="competitors-title"><div class="section-heading"><div><p class="eyebrow">05 / LEARN, THEN MAKE IT OURS</p><h2 id="competitors-title">Competitor benchmarking</h2></div><p>These comparison points focus on visible retail practices, not on claiming one retailer is better than another.</p></div><div class="competitor-profiles">
+				<article class="competitor-profile"><span class="competitor-number">01</span><div><p class="mini-label">COMPETITOR 1</p><h3>Recognition through repetition</h3><div class="competitor-cues"><span>Branding</span><span>Signage</span><span>Menu &amp; promotions</span><span>Product imagery</span></div><p>Strong, consistent branding makes the retailer easy to recognise across signs and promotional material.</p><div class="learning-note"><strong>WHAT WE CAN LEARN</strong><p>Use consistent branding at every touchpoint while keeping FreshRise's own identity distinctive.</p></div></div></article>
+				<article class="competitor-profile"><span class="competitor-number">02</span><div><p class="mini-label">COMPETITOR 2</p><h3>Clarity at the choice point</h3><div class="competitor-cues"><span>Menu boards</span><span>Promotions</span><span>Product display</span><span>Price communication</span></div><p>Clear menus and product-price communication help customers compare options and decide what to buy.</p><div class="learning-note"><strong>WHAT WE CAN LEARN</strong><p>Keep information clear, add lifestyle storytelling and connect the physical store with online ordering.</p></div></div></article>
+			</div><div class="comparison-wrap" role="region" aria-label="Competitor comparison table" tabindex="0"><table class="comparison-table"><caption>Benchmarking the visual experience</caption><thead><tr><th scope="col">Aspect</th><th scope="col">Competitor 1</th><th scope="col">Competitor 2</th><th scope="col">Our Retailer</th></tr></thead><tbody>
+				<tr><th scope="row">Branding</th><td data-label="Competitor 1">Strong and recognisable</td><td data-label="Competitor 2">Strong and recognisable</td><td data-label="Our Retailer">Consistent across physical and online platforms</td></tr><tr><th scope="row">Signage</th><td data-label="Competitor 1">Mainly promotional</td><td data-label="Competitor 2">Product and price focused</td><td data-label="Our Retailer">Promotional, directional and lifestyle</td></tr><tr><th scope="row">Displays</th><td data-label="Competitor 1">Mainly product focused</td><td data-label="Competitor 2">Mainly product focused</td><td data-label="Our Retailer">Product and lifestyle displays</td></tr><tr><th scope="row">Navigation</th><td data-label="Competitor 1">Basic signs</td><td data-label="Competitor 2">Clear signs</td><td data-label="Our Retailer">Clear directional signs</td></tr><tr><th scope="row">Online connection</th><td data-label="Competitor 1">Online presence</td><td data-label="Competitor 2">Online presence</td><td data-label="Our Retailer">Same branding online and in-store</td></tr><tr><th scope="row">Main difference</th><td data-label="Competitor 1">Established identity</td><td data-label="Competitor 2">Established identity</td><td data-label="Our Retailer">Focus on signage and retail identity</td></tr>
+			</tbody></table></div></section>
+
+		<section class="strategy-section" aria-labelledby="strategy-title"><div class="strategy-heading"><p class="eyebrow">THE FRESHRiSE DIFFERENCE</p><h2 id="strategy-title">What makes our strategy different?</h2><p>Signage is not being used only for decoration. It is a practical communication system for the whole customer journey.</p></div><div class="strategy-grid"><div><span>01</span><i class="fas fa-store" aria-hidden="true"></i><p>Recognise the retailer</p></div><div><span>02</span><i class="fas fa-search" aria-hidden="true"></i><p>Find products</p></div><div><span>03</span><i class="fas fa-tag" aria-hidden="true"></i><p>See prices</p></div><div><span>04</span><i class="fas fa-bullhorn" aria-hidden="true"></i><p>Notice promotions</p></div><div><span>05</span><i class="fas fa-directions" aria-hidden="true"></i><p>Find store areas</p></div><div><span>06</span><i class="fas fa-book-open" aria-hidden="true"></i><p>Understand the brand</p></div><div><span>07</span><i class="fas fa-link" aria-hidden="true"></i><p>Connect store and website</p></div></div><div class="connected-statement"><strong>FR<span>.</span></strong><p>The same branding will be used online and in the physical store.</p><a href="shop.html" aria-label="Visit the FreshRise online shop"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></section>
+
+		<section class="consumer-section" id="consumer-behaviour" aria-labelledby="consumer-title"><div class="consumer-copy"><p class="eyebrow">06 / DESIGN FOR REAL DECISIONS</p><h2 id="consumer-title">Consumer<br>behaviour</h2><p>Visual merchandising should make shopping easier and more enjoyable. Customers should be able to answer the questions that move them through a visit, at a glance.</p></div><div class="consumer-questions"><div><span>01</span><p>What can I buy?</p><i class="fas fa-utensils" aria-hidden="true"></i></div><div><span>02</span><p>How much does it cost?</p><i class="fas fa-tags" aria-hidden="true"></i></div><div><span>03</span><p>Where do I order?</p><i class="fas fa-clipboard-list" aria-hidden="true"></i></div><div><span>04</span><p>Where do I collect my food?</p><i class="fas fa-shopping-bag" aria-hidden="true"></i></div><div><span>05</span><p>Where can I sit?</p><i class="fas fa-chair" aria-hidden="true"></i></div></div></section>
+
+		<section class="conclusion-section" id="conclusion" aria-labelledby="conclusion-title"><div class="conclusion-brand"><img src="assets/img/Freshrise-logo.png" alt="FreshRise Market"></div><div class="conclusion-copy"><p class="eyebrow">A CONNECTED RETAIL EXPERIENCE</p><h2 id="conclusion-title">One clear story,<br>from shelf to screen.</h2><p>The strategy brings together product displays, packaging, signage, branding and sensory details. Group 2's main focus is signage and branding: POS signs highlight promotions, directional signs guide customers, lifestyle graphics build identity, and consistent design connects the physical and online store.</p><p class="final-message">The strategy is designed to create a store that is attractive, organised and comfortable while making it easier for customers to find information and make purchasing decisions.</p><a class="button-light" href="#home">Back to the beginning <i class="fas fa-arrow-up" aria-hidden="true"></i></a></div></section>
+	</main>
+	<footer class="experience-footer" id="references"><div class="footer-main"><div class="footer-brand"><img src="assets/img/Freshrise-logo.png" alt="FreshRise Market"><p>Fresh food. Better everyday.</p></div><div class="references-block"><p class="mini-label">REFERENCES</p><ol><li>Dunne, P.M., Lusch, R.F. &amp; Carver, J.R. 2014. <em>Retailing.</em> 8th ed. Cengage Learning: USA.</li><li>Sullivan, M. &amp; Adcock, D. 2006. <em>Retail Marketing.</em> Thomson Learning: London.</li></ol></div><div class="footer-links"><p class="mini-label">KEEP EXPLORING</p><a href="shop.html">Online shop <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href="about.html">About FreshRise <i class="fas fa-arrow-right" aria-hidden="true"></i></a><a href="contact.html">Contact <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></div><div class="footer-bottom"><span>FreshRise Market &amp; Bakery</span><a href="#page-top">Return to top ↑</a><span>VISUAL MERCHANDISING · GROUP 2</span></div></footer>
+
 	<!-- search area -->
 	<div class="search-area">
 		<div class="container">
@@ -631,25 +719,7 @@ Overall, the space will combine the convenience of a supermarket with the welcom
 	</div>
 	<!-- end copyright -->
 	
-	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
-	<!-- bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- count down -->
-	<script src="assets/js/jquery.countdown.js"></script>
-	<!-- isotope -->
-	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-	<!-- waypoints -->
-	<script src="assets/js/waypoints.js"></script>
-	<!-- owl carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- magnific popup -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- mean menu -->
-	<script src="assets/js/jquery.meanmenu.min.js"></script>
-	<!-- sticker js -->
-	<script src="assets/js/sticker.js"></script>
-	<!-- main js -->
 	<script src="assets/js/main.js"></script>
 
 </body>
