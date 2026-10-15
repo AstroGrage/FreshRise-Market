@@ -3965,12 +3965,319 @@ body.sidebar-open .site-sidebar {
   margin: 0;
 }
 
+.customer-service-section {
+  background: #f5f7f4;
+  padding: 90px 0;
+}
+
+.customer-service-heading {
+  margin: 0 auto 42px;
+  max-width: 760px;
+}
+
+.customer-service-eyebrow,
+.service-card-label {
+  color: #a94f08;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin: 0 0 9px;
+  text-transform: uppercase;
+}
+
+.customer-service-heading h2 {
+  font-size: 38px;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.customer-service-heading > p:last-child {
+  color: #53616a;
+  font-size: 16px;
+  margin: 0;
+}
+
+.service-commitment {
+  align-items: center;
+  background: #fff;
+  border-left: 4px solid #F28123;
+  box-shadow: 0 8px 26px rgba(5, 25, 34, 0.06);
+  display: flex;
+  gap: 22px;
+  margin-bottom: 26px;
+  padding: 26px 30px;
+}
+
+.service-icon {
+  align-items: center;
+  background: #fff3e9;
+  border-radius: 50%;
+  color: #F28123;
+  display: flex;
+  flex: 0 0 54px;
+  font-size: 21px;
+  height: 54px;
+  justify-content: center;
+}
+
+.service-commitment h3,
+.service-card h3,
+.customer-service-contact h3,
+.customer-service-faq h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.service-commitment p,
+.service-card p,
+.customer-service-contact p,
+.customer-service-faq details p {
+  color: #53616a;
+  margin-bottom: 0;
+}
+
+.customer-service-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-card {
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(5, 25, 34, 0.06);
+  padding: 30px;
+}
+
+.complaint-steps,
+.food-safety-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.complaint-steps li {
+  align-items: flex-start;
+  border-bottom: 1px solid #edf0ed;
+  display: flex;
+  gap: 14px;
+  padding: 13px 0;
+}
+
+.complaint-steps li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.complaint-steps li > span {
+  color: #a94f08;
+  flex: 0 0 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.complaint-steps strong {
+  color: #051922;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.complaint-steps p {
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 3px 0 0;
+}
+
+.food-safety-card {
+  background: #fffaf5;
+  border-top: 4px solid #F28123;
+}
+
+.food-safety-list {
+  list-style: disc;
+  margin: 14px 0 18px;
+  padding-left: 22px;
+}
+
+.food-safety-list li {
+  color: #53616a;
+  margin: 7px 0;
+  padding-left: 3px;
+}
+
+.food-safety-card > p {
+  margin-bottom: 14px;
+}
+
+.food-safety-card .medical-reassurance {
+  background: #fff;
+  border-radius: 3px;
+  color: #394a52;
+  margin: 20px 0 0;
+  padding: 14px 16px;
+}
+
+.customer-service-contact {
+  background: #051922;
+  color: #fff;
+  margin-top: 26px;
+  padding: 30px;
+}
+
+.customer-service-contact h3,
+.customer-service-contact .service-card-label {
+  color: #fff;
+}
+
+.customer-service-contact .service-card-label {
+  color: #f7a361;
+}
+
+.customer-service-contact p {
+  color: #d4dde0;
+}
+
+.service-contact-detail {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin-top: 12px;
+}
+
+.service-contact-detail i {
+  color: #f7a361;
+  width: 18px;
+}
+
+.service-contact-detail a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.service-contact-detail a:hover,
+.service-contact-detail a:focus-visible {
+  color: #f7a361;
+}
+
+.service-contact-note {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.customer-service-faq {
+  margin: 56px auto 0;
+  max-width: 900px;
+}
+
+.faq-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.customer-service-faq details {
+  background: #fff;
+  border: 1px solid #e4e9e5;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.customer-service-faq summary {
+  color: #051922;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  list-style-position: outside;
+  padding: 15px 0;
+}
+
+.customer-service-faq summary:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid #a94f08;
+  outline-offset: 4px;
+}
+
+.customer-service-faq summary::marker {
+  color: #a94f08;
+}
+
+.customer-service-faq details p {
+  font-size: 14px;
+  padding: 0 0 16px;
+}
+
+.customer-service-faq details p a {
+  color: #a94f08;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .find-location p {
   color: #fff;
   font-size: 40px;
   margin: 0;
   font-weight: 600;
   padding: 95px 0;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .customer-service-section {
+    padding: 62px 0;
+  }
+
+  .customer-service-heading {
+    margin-bottom: 28px;
+  }
+
+  .customer-service-heading h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .customer-service-heading > p:last-child {
+    font-size: 14px;
+  }
+
+  .service-commitment {
+    align-items: flex-start;
+    gap: 15px;
+    padding: 21px 18px;
+  }
+
+  .service-icon {
+    flex-basis: 42px;
+    font-size: 17px;
+    height: 42px;
+  }
+
+  .service-commitment h3,
+  .service-card h3,
+  .customer-service-contact h3,
+  .customer-service-faq h3 {
+    font-size: 19px;
+  }
+
+  .customer-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .customer-service-contact {
+    padding: 23px 19px;
+  }
+
+  .customer-service-faq {
+    margin-top: 42px;
+  }
+
+  .customer-service-faq details {
+    padding: 0 15px;
+  }
 }
 
 .find-location p i {
